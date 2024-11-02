@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    border: 3px solid rgb(43, 44, 48);
+    background-color: rgb(43, 44, 48);
+}
+.left-container{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+}
+.upper-container{
+    position: relative;
+    height: 25%;
+    width: 100%;
+    background-color: #0a2adf;
+    border-radius: 15px 0 0 0;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+.label{
+    font-weight: 550;
+}
+.name h3, .label{
+  color: rgb(70, 46, 11);
+}
+img{
+    position: absolute;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    top: 58%;
+    left: 34%;
+}
+.lower-container{
+    height: 75%;
+    width: 100%;
+    background-color: #1e1e2a;
+    border-radius: 0 0 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: rgb(193, 231, 207);
+}
+.title{
+    width: 100%;
+    color: #1e1e2a;
+    background: linear-gradient(to right, rgb(216, 151, 32), rgb(233, 184, 86));
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 2px 20px 20px 2px;
+}
+.contact-info{
+    width: 100%;
+    margin-top: 80px;
+}
+.hobbies-container{
+    width: 100%;
+}
+.contact-info, .hobbies-container{
+    padding: 20px;
+    
+}
+.contact-info .title, .hobbies-container .title{
+    width: 150px;
+    height: 30px;
+    padding-bottom: 20px;
+}
+.contact-info .icon .bx{
+    font-size: 1rem;
+}
+.icon, .hobby-list{
+    padding: 7px;
+}
+.hobbies{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto);
+    gap: 5px 50px;
+}
+.right-container{
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(9, 32, 27), rgb(22, 49, 63) );
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(193, 231, 207)
+}
+.item{
+    width: 95%;
+    padding: 15px 0 15px 0;
+}
+.container-title{
+    color: #1e1e2a;
+    background: linear-gradient(to right, rgb(216, 151, 32), rgb(233, 184, 86));
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 2px 20px 20px 2px;
+    width: 100%;
+    padding-bottom: 5px;
+}
+.educ-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px 20px;
+}
+.right-container .bx{
+    font-size: 1.2rem;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 15px 30px;
+}
